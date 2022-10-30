@@ -1,0 +1,21 @@
+.breadcrumb {
+  align-items: center;
+  display: flex;
+  .breadcrumb__item {
+    margin: 0 0 24px;
+    position: relative;
+    text-align: left;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-family: 'Roboto';
+  }
+  .breadcrumb__item:not(:last-child)::after {
+    content: '/';
+    margin: 0 5px;
+  }
+  .active {
+    color: #004B40;
+    font-weight: 600;
+  }
+}
+
